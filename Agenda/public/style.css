@@ -1,0 +1,154 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(175, 107, 107);
+  }
+
+  body{
+    background-color: rgb(243, 226, 205, .8);
+  }
+
+  .container{
+    height: 100vh;
+    width: 1500px;
+    margin: 50px auto;
+  }
+
+  .container h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+
+.form-data{
+  display: block;
+  width: 50%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  }
+
+.form-data input{
+  margin: 10px 10px;
+  line-height: 20px;
+  border-color: rgb(175, 107, 107);
+  outline: 0;
+  }
+
+.form-data button{
+  margin: 10px 10px;
+  }
+
+.tasks-list{
+  display: flex;
+  flex-direction: column;
+  }
+
+.tasks{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  margin-top: 10px;
+  }
+
+.add-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.add-button img{
+    width: 40px;
+    height:40px;
+  }
+
+  .delete{
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .delete img{
+    width: 40px;
+    height:40px;
+  }
+
+.show-form-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+.show-form-button img{
+    width: 40px;
+    height:40px;
+  }
+
+.mode-button {
+    background: #cb8383;
+    border-radius: 5px;
+    border-color: #cb8383;
+    color: rgb(254, 243, 243);
+    margin-bottom: 10px; 
+    cursor: pointer;
+    width: 150px;
+    height: 20px; 
+  }
+  
+.show-edit-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.show-edit-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.edit-form{
+  display: none;
+  border-color: rgb(175, 107, 107);
+  outline: 0;
+}
+
+.add-phone-form {
+  display: none;
+  border-color: rgb(175, 107, 107);
+  outline: 0;
+}
+
+.close-edit-form{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-edit-form img{
+  width: 25px;
+  height: 25px;
+}
+
+.close-phone{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-phone img{
+  width: 25px;
+  height: 25px;
+}
+
+.column-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
