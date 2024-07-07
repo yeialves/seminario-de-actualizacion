@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "password": "1234",
+      "group": [1]
+    },
+    {
+      "id": 2,
+      "username": "jane_doe",
+      "password": "4567",
+      "group": [1]
+    },
+    {
+      "id": 3,
+      "username": "jess_doe",
+      "password": "8910",
+      "group": [2]
+    },
+    {
+      "id": 4,
+      "username": "joe_doe",
+      "password": "1112",
+      "group": [3]
+    },
+    {
+      "id": 5,
+      "username": "james_doe",
+      "password": "1314",
+      "group": [3]
+    }
+  ],
+  "group": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "description": "Administrators group"
+    },
+    {
+      "id": 2,
+      "name": "User",
+      "description": "Regular users group"
+    },
+    {
+      "id": 3,
+      "name": "Guest",
+      "description": "Guest users group"
+    }
+  ],
+  "action": [
+    {
+      "id": 1,
+      "name": "Login",
+      "description": "User login action"
+    },
+    {
+      "id": 2,
+      "name": "Logout",
+      "description": "User logout action"
+    },
+    {
+      "id": 3,
+      "name": "Create",
+      "description": "Create action"
+    },
+    {
+      "id": 4,
+      "name": "Delete",
+      "description": "Delete action"
+    },
+
+    {
+      "id": 5,
+      "name": "Edit",
+      "description": "Edit action"
+    },
+
+    {
+      "id": 6,
+      "name": "Search",
+      "description": "Search action"
+    }
+  ]
+}

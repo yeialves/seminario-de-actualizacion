@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Groups</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            width: 50%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, select, button {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Access Control</h1>
+    
+    <form id="registerForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="groups">Groups:</label>
+        <select id="groups" name="groups" multiple required>
+            <!-- Las opciones se cargarán dinámicamente aquí -->
+        </select>
+        
+        <button type="submit">Register</button>
+    </form>
+    
+    
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Groups</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- Botón para agregar nuevo grupo -->
+    <button onclick="toggleGroupForm()">Agregar Nuevo Grupo</button>
+    <!-- Formulario para agregar nuevo grupo (inicialmente oculto) -->
+    <div id="groupForm" style="display: none;">
+        <form id="newGroupForm">
+            <label for="groupName">Nombre del Grupo:</label>
+            <input type="text" id="groupName" name="groupName">
+            
+            <label for="groupDescription">Descripción del Grupo:</label>
+            <input type="text" id="groupDescription" name="groupDescription">
+            
+            <button type="submit">Agregar Grupo</button>
+        </form>
+        
+    </div>
+    
+    <!-- Botón para agregar nueva acción -->
+    <button onclick="toggleActionForm()">Agregar Nueva Acción</button>
+    <!-- Formulario para agregar nueva acción (inicialmente oculto) -->
+    <div id="actionForm" style="display: none;">
+        <form id="newActionForm">
+            <label for="actionName">Nombre de la Acción:</label>
+            <input type="text" id="actionName" name="actionName">
+            
+            <label for="actionDescription">Descripción de la Acción:</label>
+            <input type="text" id="actionDescription" name="actionDescription">
+            
+            <label for="group">Grupo:</label>
+            <select id="group" name="group">
+                <!-- Opciones de grupo -->
+                <option value="Admin">Admin</option>
+                <option value="User">User</option>
+                <option value="Guest">Guest</option>
+            </select>
+            
+            <button type="submit">Agregar Acción</button>
+        </form>
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
