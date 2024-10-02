@@ -19,7 +19,7 @@ conexion.connect(function(err) {
     }
 });
 
-// Motor de vista
+// Motor de vistas
 app.set("view engine", "ejs");
 
 app.use(express.json());
